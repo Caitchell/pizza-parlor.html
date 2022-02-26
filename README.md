@@ -1,15 +1,21 @@
 ## Tests
 
 
-### Describe: PizzaOrder()
+### Describe: Pizza()
 
-* Test:It should return toppings, size, and the price of the users pizza order.
+* Test:It should return toppings, and size of the users pizza order.
 * Code: Pizza()
-* Expected Output:Pizza (toppings, size, and price)
+* Expected Output:Pizza (toppings, size)
 
-* Test:
-* Code:
-* Expected Output:
+* Test:It should return a price based off of the size of the pizza ordered, Medium, or Large.
+* Code:Pizza()
+* Expected Output: If the size is Medium the price will be 10, if the size is Large, the price will be 15.
+
+### Describe: OrderTotal
+
+* Test:It should return the price of the users order.
+* Code: OrderTotal()
+* Expected Output:OrderTotal(price)
 
 * Test:
 * Code:

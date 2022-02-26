@@ -8,7 +8,7 @@ function Pizza(toppings, size) {
 
 Pizza.prototype.toppingsPrice = function(){
     if(this.toppings.length != 0){
-        let toppingsPrice = this.toppings.length + 2;
+        let toppingsPrice = this.toppings.length + 1;
         return toppingsPrice;
     }else {
         alert("Must choose atleast one topping!")
@@ -27,6 +27,7 @@ Pizza.prototype.sizePrice = function() {
 
 Pizza.prototype.completeOrder = function(toppingsPrice, sizePrice) {
     let orderTotal = toppingsPrice + sizePrice;
+    return orderTotal;
 }
 
 // Business logic for OderTotal

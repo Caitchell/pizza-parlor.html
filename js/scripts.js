@@ -6,7 +6,16 @@ function Pizza(toppings, size) {
     this.size = this.size;
 }
 
-Pizza.prototype.price = function() {
+Pizza.prototype.toppingsPrice = function(){
+    if(this.toppings.length != 0){
+        let toppingsPrice = this.toppings.length + 2;
+        return toppingsPrice;
+    }else {
+        alert("Must choose atleast one topping!")
+    }
+}
+
+Pizza.prototype.sizePrice = function() {
     if(this.size === "Medium") {
         return 10;
     } else if(this.size === "Large"){
@@ -15,12 +24,9 @@ Pizza.prototype.price = function() {
         alert ("Must choose size!")
     }
 }
-    
-// Business Logic for PizzaOrder
 
-function PizzaOrder(Pizzas, orderTotal) {
-    this.pizzas = [];
-    this.price
+Pizza.prototype.completeOrder = function(toppingsPrice, sizePrice) {
+    let orderTotal = toppingsPrice + sizePrice;
 }
 
 // Business logic for OderTotal

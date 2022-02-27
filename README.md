@@ -14,6 +14,6 @@
 * Code: Pizza()
 * Expected Output: If the user gets more that one topping it should add 2 to the order total amount.
 
-* Test: It should return add the price of topping to the price of the size pizza seleced to return the price of the users order.
+* Test: It should return the price of toppings added to the price of the size pizza seleced to return the total price of the users order.
 * Code: Pizza()
-* Expected Output: OrderTotal(price)
+* Expected Output: Name, Toppings, size, and Order total.

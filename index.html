@@ -3,19 +3,23 @@
 <head>
 
 <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="css/styles.css">
     <title>Pizza Parlor</title>
 </head>
 <body>
     <div class="container">
+        <h1> Caitlyn's Pizza Parlor!</h1>
+        <h3>Create your custom pizza order below!</h3>
+    </div>
         <form id="formid">
             <div class="form-group">
-                <label for="name">Name :</label>
+                <label for="name"><strong><em>Name :</em></strong></label>
                 <input type="text"  class="form-control" id="name" placeholder="Name">
             </div>
             <div>
-                <label for="toppingsAmount">Amount of toppings : </label>
+                <label for="toppingsAmount"><strong><em>Amount of toppings : </em></strong></label>
                 <select id="toppingsAmount" class="form-control">
                     <option selected>Choose the number of toppings</option>
                     <option value= "1">1</option>
@@ -26,7 +30,7 @@
             </div>
 
         <div class="form-check">
-            <label for="toppings">Choose your toppings: </label> <br>
+            <label for="toppings"><strong><em>Choose your toppings: </em></strong></label> <br>
 
             <input class="form-check-input" type="checkbox" value="Cheese" name="toppingCheck">
             <label class="form-check-label" for="cheese">
@@ -53,9 +57,7 @@
             Bell peppers
             </label>
         </div>
-    </div>
 
-    <div class="container">
         <div class="form-check">
             <label for="chooseToppings"><strong><em>Choose the size of your Pizza:</em></strong></label><br>
             <input class="form-check-input" type="radio" name="sizePizza" id="option1" value="Medium">
@@ -68,7 +70,7 @@
             <label class="form-check-label" for="sizeLarge">
             Large($15)
             </label>
-        </div><button type="submit" class="btn-primary" id="btn-submit">Checkout</button>
+        </div><button type="submit" class="btn-danger" id="btn-submit">Checkout</button>
     </form>
     </div>
     <div id="order-Total">
